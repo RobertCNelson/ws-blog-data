@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<script type="text/javascript" src="dygraph.min.js"></script>
+		<link rel="stylesheet" href="dygraph.css" />
+		<meta http-equiv="refresh" content="60">
+	</head>
+<body>
+
+<div id="graphdiv_voltage"></div>
+<script type="text/javascript">
+	g = new Dygraph(
+		document.getElementById("graphdiv_voltage"),
+		"data/voltage_data.csv",
+		{
+			labels: [ 'Date', 'Load', 'Charger'],
+			rollPeriod: 12,
+			title: 'Battery/Charger Voltage',
+			ylabel: 'Voltage (V)',
+		}
+	);
+</script>
+
+<div id="graphdiv_current"></div>
+<script type="text/javascript">
+	g = new Dygraph(
+		document.getElementById("graphdiv_current"),
+		"data/current_data.csv",
+		{
+			labels: [ 'Date', 'Load', 'Charger'],
+			rollPeriod: 12,
+			title: 'Battery/Charger Current',
+			ylabel: 'Current (mA)',
+		}
+	);
+</script>
+
+<div id="graphdiv_charger_current"></div>
+<script type="text/javascript">
+	g = new Dygraph(
+		document.getElementById("graphdiv_charger_current"),
+		"data/charger_current_data.csv",
+		{
+			labels: [ 'Date', 'Charger'],
+			rollPeriod: 12,
+			title: 'Charger Current',
+			ylabel: 'Current (mA)',
+		}
+	);
+</script>
+
+</body>
+</html>
