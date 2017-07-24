@@ -1,6 +1,6 @@
 <current>
-    <temperature value="83.98" min="67.32" max="83.98" unit="fahrenheit"/>
-    <humidity value="66.38" unit="%">
-    <pressure value="96862.50" unit="hPa">
-    <lastupdate value="2017-07-21T11:54:05">
+    <temperature value="82.03" min="60.70" max="82.57" unit="fahrenheit"/>
+    <humidity value="53.28" unit="%">
+    <pressure value="97253.50" unit="hPa">
+    <lastupdate value="2017-07-24T14:24:19">
 </current>
